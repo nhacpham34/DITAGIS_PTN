@@ -1,0 +1,137 @@
+.option {
+    height: 50px;
+    display: block;
+}
+
+.container {
+    min-height: 700px;
+}
+
+.container__title {
+    font-size:24px;
+    margin: 24px 0;
+}
+
+.product__filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 0px;
+    align-items: center;
+}
+
+.product__btn {
+    padding: 12px 0;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    min-width: 140px;
+    font-size:18px;
+    font-weight: 600;
+}
+
+.product__btn--active {
+    color: #fff;
+    background-color:#904b67;
+    font-weight: 700;
+}
+
+.product__item {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+    margin: 16px 0;
+    text-decoration: none;
+    color:unset;
+    
+}
+
+.product__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    position: relative;
+}
+
+.product__type {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    background-color:rgba(144, 75, 103, 0.7) ;
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.product__like {
+    position: absolute;
+    top: 10%;
+    right:  5%;
+    color: white;
+    font-size:18px;
+    z-index: 10;
+}
+
+.like--active {
+    color:rgb(255, 0, 128);
+}
+
+.product__card-name {
+    text-decoration: none;
+    padding: 16px;
+    color: unset;
+    display:block;
+}
+
+.product__name {
+    font-size: 18px;
+    font-weight:500;
+    margin-bottom: 12px;
+}
+
+.product__text {
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+    line-height: 20px;
+}
+
+.product__price {
+    font-weight: 600;
+    color: #000;
+}
+
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .product__btn {
+        min-width: 120px;
+    }
+    .header-banner__title {
+        font-size:50px;
+        line-height: 60px;
+    }
+
+    .header-banner__bg {
+        margin: 0 auto;
+    }
+}
+
+/* >= Tablet */
+@media (max-width: 739px){
+    .header-banner__title {
+        font-size:42px;
+        line-height: 50px;
+    }
+    .product__filter {
+        flex-wrap: nowrap;
+        overflow: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+    }
+
+    .product__filter::-webkit-scrollbar { 
+        width: 0 !important;
+        display: none; 
+    }
+
+    .product__image {
+        height: unset;
+    }
+}
